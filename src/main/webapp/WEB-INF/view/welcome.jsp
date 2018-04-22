@@ -26,7 +26,6 @@
 
                         <!-- Modal content-->
                         <div class="modal-content">
-            <c:forEach items="${files}" var="file">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title">File_${file.id}</h4>
@@ -69,7 +68,6 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
-                </c:forEach>
                         </div>
 
                     </div>
