@@ -17,11 +17,11 @@
 
 <br/>
     <ul>
-        <c:forEach items="${files}" var="file">
+        <c:forEach items="${files}" var="file" varStatus="vs">
             <li>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">File_${file.id}</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal${vs.index}">File_${file.id}</button>
                 <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
+                <div id="myModal${vs.index}" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
                         <!-- Modal content-->

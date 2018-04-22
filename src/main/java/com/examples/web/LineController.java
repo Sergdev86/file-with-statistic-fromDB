@@ -20,7 +20,6 @@ public class LineController {
     public String index(Model model){
 
         List<FileObj> files = (List<FileObj>) service.getAllFiles();
-        files.stream().forEach(o -> System.out.println(o.toString()));
         model.addAttribute("files", files);
         return "welcome";
     }
